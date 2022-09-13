@@ -32,6 +32,8 @@ button {
   border-color: black;
   border-style: solid;
   background-color: white;
+  text-align: right;
+  font-size: xx-large;
 }
 
 #equal {
