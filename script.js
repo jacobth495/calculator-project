@@ -36,3 +36,76 @@ function divide(a, b) {
   c = a / b;
   return c
 };
+
+oneBtn.addEventListener('click', function() {
+  screen.textContent += 1;
+})
+
+twoBtn.addEventListener('click', function() {
+  screen.textContent += 2;
+})
+
+threeBtn.addEventListener('click', function() {
+  screen.textContent += 3;
+})
+
+fourBtn.addEventListener('click', function() {
+  screen.textContent += 4;
+})
+
+fiveBtn.addEventListener('click', function() {
+  screen.textContent += 5;
+})
+
+sixBtn.addEventListener('click', function() {
+  screen.textContent += 6;
+})
+
+sevenBtn.addEventListener('click', function() {
+  screen.textContent += 7;
+})
+
+eightBtn.addEventListener('click', function() {
+  screen.textContent += 8;
+})
+
+nineBtn.addEventListener('click', function() {
+  screen.textContent += 9;
+})
+
+zeroBtn.addEventListener('click', function() {
+  screen.textContent += 0;
+})
+
+multiplyBtn.addEventListener('click', function() {
+  inputOne = parseInt(screen.textContent);
+  screen.textContent += ' * ';
+})
+
+divideBtn.addEventListener('click', function() {
+  inputOne = parseInt(screen.textContent);
+  screen.textContent += ' / ';
+})
+
+addBtn.addEventListener('click', function() {
+  inputOne = parseInt(screen.textContent);
+  screen.textContent += ' + ';
+})
+
+subtractBtn.addEventListener('click', function() {
+  inputOne = parseInt(screen.textContent);;
+  screen.textContent += ' - ';
+})
+
+equalBtn.addEventListener('click', function() {
+  problem = screen.textContent.split(' ');
+  inputTwo = parseInt(problem[2]);
+})
+
+clearBtn.addEventListener('click', function() {
+  screen.textContent = '';
+})
+
+backspaceBtn.addEventListener('click', function() {
+  screen.textContent = screen.textContent.slice(0, -1);
+})
