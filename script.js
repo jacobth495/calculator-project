@@ -100,6 +100,27 @@ subtractBtn.addEventListener('click', function() {
 equalBtn.addEventListener('click', function() {
   problem = screen.textContent.split(' ');
   inputTwo = parseInt(problem[2]);
+  if (problem[1] === '/' && inputTwo === 0) {
+    alert("You can't divide by 0 silly!!!");
+  }
+  switch (problem[1]) {
+    case '*':
+      screen.textContent = inputOne + ' * ' + inputTwo +
+      ' = ' + multiply(inputOne, inputTwo);
+      break;
+    case '/':
+      screen.textContent = inputOne + ' / ' + inputTwo +
+      ' = ' + divide(inputOne, inputTwo);
+      break;
+    case '-':
+      screen.textContent = inputOne + ' - ' + inputTwo +
+      ' = ' + subtract(inputOne, inputTwo);
+      break;
+    case '+':
+      screen.textContent = inputOne + ' + ' + inputTwo +
+      ' = ' + add(inputOne, inputTwo);
+      break;
+  }
 })
 
 clearBtn.addEventListener('click', function() {
