@@ -1,12 +1,48 @@
 body {
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: tan;
+}
 
 #main {
   display: grid;
   margin: auto;
-  width: 500px;
-  height: 750px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: minmax(1fr, auto);
+  width: 50vh;
+  height: 75vh;
+}
+
+#screen {
+  grid-column: span 4;
+  grid-row: span 2;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  background-color: white;
+}
+
+#equal {
+  grid-column: span 4;
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.func {
+  background-color: yellow;
 }
