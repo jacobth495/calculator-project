@@ -16,3 +16,23 @@ const subtractBtn = document.querySelector('#subtract');
 const clearBtn = document.querySelector('#clear');
 const backspaceBtn = document.querySelector('#backspace');
 const equalBtn = document.querySelector('#equal');
+
+function add(a, b) {
+	c = a + b;
+  return c;
+};
+
+function subtract(a, b) {
+	c = a - b;
+  return c;
+};
+
+function multiply(a, b) {
+  c = a * b;
+  return c
+};
+
+function divide(a, b) {
+  c = a / b;
+  return c
+};
